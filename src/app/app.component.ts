@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'onlinemessage';
+  public isAuthenticated: boolean;
+
+  constructor() {
+    this.isAuthenticated = false;
+  }
+  login() {
+  }
+
+  logout() {
+  }
 }
