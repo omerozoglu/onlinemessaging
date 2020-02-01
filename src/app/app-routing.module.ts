@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { MenuComponent } from './message-menu/menu/menu.component';
 const routes: Routes = [
-  {path: '', redirectTo: '/', pathMatch: 'full'}
+  {path: '', redirectTo: '/', pathMatch: 'full'},
+  {path: '',component:MenuComponent}
 ];
 
 

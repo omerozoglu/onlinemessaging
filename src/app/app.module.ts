@@ -9,7 +9,8 @@ import {
   MatMenuModule,
   MatProgressSpinnerModule,
   MatTableModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatGridList
 } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -19,11 +20,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MenuComponent } from './message-menu/menu/menu.component';
+import { HeadComponent } from './message-menu/head/head.component';
+import { FooterComponent } from './message-menu/footer/footer.component';
+import { MessageComponent } from './message-menu/message/message.component';
+import { GroupComponent } from './message-menu/group/group.component';
+import { FriendComponent } from './message-menu/friend/friend.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    MatGridList,
+    HeadComponent,
+    FooterComponent,
+    MessageComponent,
+    GroupComponent,
+    FriendComponent
   ],
   imports: [
     BrowserModule,
