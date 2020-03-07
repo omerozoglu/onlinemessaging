@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-12">
+    <div *ngIf="activeComp == 0">
+      <app-friend></app-friend>
+    </div>
+    <div *ngIf="activeComp == 1">
+      <app-group></app-group>
+    </div>
+    <div *ngIf="activeComp == 2"></div>
+  </div>
+</div>

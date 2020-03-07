@@ -1,0 +1,62 @@
+<form
+  [formGroup]="registerForm"
+  class="form-signin text-center"
+  (ngSubmit)="onSubmit(registerForm.value)"
+>
+  <img
+    class="mb-4"
+    src="/docs/4.4/assets/brand/bootstrap-solid.svg"
+    alt=""
+    width="72"
+    height="72"
+  />
+  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+  <label for="inputName" class="sr-only">Name</label>
+  <input
+    type="text"
+    id="inputName"
+    formControlName="name"
+    class="form-control"
+    placeholder="Name"
+    autofocus
+  />
+  <label for="inputUsername" class="sr-only">Username</label>
+  <input
+    type="text"
+    id="inputUsername"
+    formControlName="username"
+    class="form-control"
+    placeholder="Username"
+    required
+    autofocus
+  />
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input
+    type="email"
+    id="inputEmail"
+    formControlName="email"
+    class="form-control"
+    placeholder="Email address"
+    required
+    autofocus
+  />
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input
+    type="password"
+    id="inputPassword"
+    formControlName="password"
+    class="form-control"
+    placeholder="Password"
+    required
+  />
+  <button class="btn btn-lg btn-primary btn-block" type="submit">
+    Sign Up
+  </button>
+
+  <p class="mt-5 mb-3 text-muted">Zaten hasbaın var mı?</p>
+  <button class="btn btn-lg btn-link" routerLink="/account/login" type="submit">
+    Sign in
+  </button>
+
+  <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+</form>

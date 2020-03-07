@@ -1,0 +1,50 @@
+<form [formGroup]="loginForm" class="form-signin text-center">
+  <img
+    class="mb-4"
+    src="/docs/4.4/assets/brand/bootstrap-solid.svg"
+    alt=""
+    width="72"
+    height="72"
+  />
+  <h1 class="h3 mb-5 font-weight-normal">Please sign in</h1>
+  <div *ngIf = "isAlertShow">TEST</div>
+  <div *ngIf = "isAlertShow">TEST 2</div>
+  <label for="inputUsername" class="sr-only">Username</label>
+  <input
+    id="inputUsername"
+    formControlName="username"
+    class="form-control my-2"
+    placeholder="Username"
+    required
+    autofocus
+  />
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input
+    type="password"
+    id="inputPassword"
+    formControlName="password"
+    class="form-control my-2"
+    placeholder="Password"
+    required
+  />
+  <div class="checkbox mb-3">
+    <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+  </div>
+  <button
+    class="btn btn-lg btn-primary btn-block"
+    (click)="login(loginForm.value)"
+    type="submit"
+  >
+    Sign in
+  </button>
+
+  <p class="mt-5 mb-3 text-muted">Hesabın yok mu?</p>
+  <button
+    class="btn btn-lg btn-link"
+    routerLink="/account/register"
+    type="submit"
+  >
+    Sign up
+  </button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+</form>
